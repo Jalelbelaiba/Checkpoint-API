@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Nixie+One&family=Rubik:wght@300;500&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 5rem;
+  background: #ffffff;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+span {
+  font-weight: 400;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4rem;
+}
+
+.card {
+  background: #020202;
+  border-radius: 3rem;
+  overflow: hidden;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  color: #fff;
+}
+
+.card .image {
+  position: relative;
+}
+
+.card .image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card .image .note {
+  position: absolute;
+  font-family: "Nixie One", cursive;
+  border-top-left-radius: 1rem;
+  right: 0;
+  bottom: 0;
+  padding: 8px 1.3rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  background: #fff;
+  color: #0d0c0c;
+}
+
+.card__content {
+  padding: 3rem 2rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__content .list-label {
+  margin-top: 2rem;
+}
+
+.card h2 {
+  font-family: "Nixie One", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 2.8rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 2.5rem;
+  line-height: 3.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .card h2 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+}
+
+.card h2, .card h3, .card p, .card ul {
+  color: #fff;
+}
+
+.card h2, .card h3 {
+  font-family: "Nixie One", cursive;
+}
+
+.card .add-ons {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+
+.card {
+  background-color: #333;
+}
